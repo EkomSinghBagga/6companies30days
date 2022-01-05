@@ -1,0 +1,9 @@
+static int last(int n,int m,int k){
+if(m<=n+k-1)
+  return m+k-1;
+else
+  m=(m-n+k-1)%n;
+if(m==0)
+  return n;
+return m;
+}
